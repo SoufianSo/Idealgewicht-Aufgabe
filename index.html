@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rechner für das Idealgewicht</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <h1>Rechner für das Idealgewicht</h1>
+    <p>Füllen Sie die folgenden Felder aus</p>
+
+    <form id="idealWeightForm">
+      <label for="height"> Körpergröße (in cm)</label>
+      <input type="number" name="" id="height" required />
+      <br />
+
+      <label for="age"> Alter: </label>
+      <input type="number" name="" id="age" required />
+      <br />
+
+      <label for="bodyType">Körperbau:</label>
+      <select name="" id="bodyType" required>
+        <option value="zierlich">zierlich & schmal</option>
+        <option value="breit">breit</option>
+      </select>
+      <br />
+
+      <button type="button" onclick="calculateIdealWeight()">Berechnen</button>
+    </form>
+
+    <p>Ihr Idealgewicht beträgt: <span id="result"></span> kg</p>
+
+    <div>
+      <img src="./assets/EPK/EPK_Rechner für das Idealgewicht.jpg" alt="" />
+    </div>
+
+    <script src="./assets/mains.js"></script>
+  </body>
+</html>
